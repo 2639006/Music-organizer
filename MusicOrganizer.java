@@ -19,6 +19,27 @@ public class MusicOrganizer
         files = new ArrayList<>();
     }
     
+    public void checkIndex(int Index){
+        if ( 0 <= Index && Index < files.size()){
+             System.out.println("VALID");
+
+        } else { 
+            System.out.println("INVALID");
+        }
+    }
+    
+     public boolean ValidIndex(int Index){
+        if ( 0 <= Index && Index < files.size()){
+             return true;
+
+        } else { 
+            return false;
+        }
+    }
+        
+    
+    
+    
     /**
      * Add a file to the collection.
      * @param filename The file to be added.
